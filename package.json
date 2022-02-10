@@ -1,0 +1,51 @@
+{
+  "name": "kagami",
+  "version": "0.0.0",
+  "license": "MIT",
+  "scripts": {
+    "nx": "nx",
+    "start": "nx serve",
+    "build": "nx build",
+    "affected:apps": "nx affected:apps",
+    "affected:libs": "nx affected:libs",
+    "affected:build": "nx affected:build",
+    "affected:dep-graph": "nx affected:dep-graph",
+    "affected": "nx affected",
+    "format": "nx format:write",
+    "format:write": "nx format:write",
+    "format:check": "nx format:check",
+    "update": "nx migrate latest",
+    "workspace-generator": "nx workspace-generator",
+    "dep-graph": "nx dep-graph",
+    "help": "nx help"
+  },
+  "private": true,
+  "dependencies": {
+    "@mantine/core": "^3.6.7",
+    "@mantine/dates": "^3.6.7",
+    "@mantine/hooks": "^3.6.7",
+    "@mantine/modals": "^3.6.7",
+    "@mantine/notifications": "^3.6.7",
+    "core-js": "^3.6.5",
+    "dayjs": "^1.10.7",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "regenerator-runtime": "0.13.7",
+    "tslib": "^2.0.0"
+  },
+  "devDependencies": {
+    "@nrwl/cli": "12.7.2",
+    "@nrwl/react": "12.7.2",
+    "@nrwl/tao": "12.7.2",
+    "@nrwl/web": "12.7.2",
+    "@nrwl/workspace": "12.7.2",
+    "@types/jest": "26.0.24",
+    "@types/node": "14.14.33",
+    "@types/react": "17.0.3",
+    "@types/react-dom": "17.0.3",
+    "dotenv": "~10.0.0",
+    "ts-jest": "27.0.3",
+    "ts-node": "~9.1.1",
+    "typescript": "~4.3.5"
+  }
+}
