@@ -1,0 +1,126 @@
+@import "../../assets/variables.less";
+
+.kgm-sidenav {
+  flex-basis: auto !important;
+  user-select: none;
+  overflow: auto;
+  height: calc(100vh - 48px);
+  left: 0;
+  user-select: none;
+}
+
+.ant-layout-sider {
+  display: flex;
+  justify-items: center;
+  justify-content: center;
+  margin: 0 0px;
+
+  @media screen and (max-width: @screen-xs) {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 100% !important;
+  }
+
+  .anticon {
+    font-size: 36px !important;
+    transform: scale(0.75);
+  }
+
+  .menu-item-text {
+    margin-left: 5px;
+  }
+
+  .ant-layout-sider-children {
+    width: 100%;
+  }
+
+  @xs-sider-width: 4px;
+  @sm-sider-width: 40px;
+
+  &.ant-layout-sider-collapsed {
+    @media screen and (max-width: @screen-xs) {
+      width: @xs-sider-width  !important;
+      max-width: @xs-sider-width  !important;
+      min-width: @xs-sider-width  !important;
+    }
+
+    @media screen and (max-width: @screen-md) {
+      width: @sm-sider-width  !important;
+      max-width: @sm-sider-width  !important;
+      min-width: @sm-sider-width  !important;
+    }
+
+    .ant-menu-submenu-title {
+      img {
+        margin-right: 3em !important;
+      }
+    }
+
+    .menu-item-text {
+      visibility: hidden;
+    }
+
+    .submenu-folder::after {
+      content: "\2807";
+      font-size: 1em;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: center;
+      top: -23px;
+      right: 10px;
+      position: relative;
+    }
+  }
+
+  .ant-menu-submenu-title {
+    display: flex;
+    // padding: 0 2em;
+  }
+
+  .ant-layout-sider-zero-width-trigger-left {
+    z-index: 1000;
+    margin-top: -60px;
+  }
+
+  .ant-menu-item {
+    margin-top: 0;
+  }
+}
+
+.menuGroupImage {
+  width: 32px;
+  height: 32px;
+  margin-top: -2px;
+}
+
+.ant-menu-side-collapsed>.ant-menu-item,
+.ant-menu-side-collapsed>.ant-menu-item-group>.ant-menu-item-group-list>.ant-menu-item,
+.ant-menu-side-collapsed>.ant-menu-item-group>.ant-menu-item-group-list>.ant-menu-submenu>.ant-menu-submenu-title,
+.ant-menu-side-collapsed>.ant-menu-submenu>.ant-menu-submenu-title {
+  padding: 0 2em;
+}
+
+.ant-menu {
+  font-size: 13px;
+}
+
+.ant-layout-sider-collapsed {
+
+  .ant-menu-submenu-title,
+  .ant-menu-item {
+    padding: 0 2em;
+  }
+
+  .ant-menu-submenu-arrow {
+    display: none;
+  }
+
+  .ant-menu-title-content {
+    opacity: 0 !important;
+  }
+
+  .ant-menu-item {
+    text-overflow: unset;
+  }
+}
